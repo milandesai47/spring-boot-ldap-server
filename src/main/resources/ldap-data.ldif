@@ -1,70 +1,60 @@
-dn: dc=smartstream,dc=com
+dn: dc=example,dc=com
 objectclass: top
 objectclass: domain
 objectclass: extensibleObject
-dc: smartstream
+dc: example
 
-dn: ou=groups,dc=smartstream,dc=com
+dn: ou=groups,dc=example,dc=com
 objectclass: top
 objectclass: organizationalUnit
 ou: groups
 
-dn: ou=people,dc=smartstream,dc=com
+dn: ou=people,dc=example,dc=com
 objectclass: top
 objectclass: organizationalUnit
 ou: people
 
 
-dn: uid=VLD_USR,ou=people,dc=smartstream,dc=com
+dn: uid=valid_user1,ou=people,dc=example,dc=com
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-cn: Valid User
-sn: vld_usr
-uid: VLD_USR
+cn: Valid User1
+sn: valid_user1
+uid: valid_user1
 userPassword: password
 
-dn: uid=VLD_USR2,ou=people,dc=smartstream,dc=com
+dn: uid=valid_user2,ou=people,dc=example,dc=com
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
 cn: Valid User2
-sn: vld_usr2
-uid: VLD_USR2
+sn: valid_user2
+uid: valid_user2
 userPassword: password
 
-dn: uid=VLD_USR3,ou=people,dc=smartstream,dc=com
+dn: uid=test,ou=people,dc=example,dc=com
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-cn: Valid User3
-sn: vld_usr3
-uid: VLD_USR3
+cn: test
+sn: test
+uid: test
 userPassword: password
 
-dn: uid=MILAN,ou=people,dc=smartstream,dc=com
-objectclass: top
-objectclass: person
-objectclass: organizationalPerson
-objectclass: inetOrgPerson
-cn: milan
-sn: milan
-uid: milan
-userPassword: password
-
-dn: cn=developers,ou=groups,dc=smartstream,dc=com
+dn: cn=developers,ou=groups,dc=example,dc=com
 objectclass: top
 objectclass: groupOfUniqueNames
 cn: developers
 ou: developer
-uniqueMember: uid=VLD_USR,ou=people,dc=smartstream,dc=com
+uniqueMember: uid=valid_user1,ou=people,dc=example,dc=com
 
-dn: cn=managers,ou=groups,dc=smartstream,dc=com
+dn: cn=managers,ou=groups,dc=example,dc=com
 objectclass: top
 objectclass: groupOfUniqueNames
 cn: managers
 ou: manager
-uniqueMember: uid=VLD_USR,ou=people,dc=smartstream,dc=com
+uniqueMember: uid=valid_user1,ou=people,dc=example,dc=com
